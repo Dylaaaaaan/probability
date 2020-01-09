@@ -10,4 +10,5 @@ if __name__ == "__main__":
         lambda: np.sum(sample(n) == np.arange(1, n+1))
     )
     r = np.array(r)
-    print(np.sum(r >= 1) / n_simulations)
+    prob = np.sum(r >= 1) / n_simulations
+    print(f"Probability of matching card = {prob}")
